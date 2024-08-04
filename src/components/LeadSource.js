@@ -8,7 +8,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const LeadSource = () => {
   // Example data for the chart
   const data = {
-    labels: ['Source A', 'Source B', 'Source C', 'Source D'],
+    labels: ['Email', 'Website', 'Call', 'Walk In'],
     datasets: [{
       data: [10, 20, 30, 40],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],

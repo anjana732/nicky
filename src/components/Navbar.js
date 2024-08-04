@@ -1,20 +1,14 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ isAdmin, onLogout }) => {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
-        <li>
-          <Link to="/">HOME</Link>
-        </li>
-        <li>
-          <Link to="/">ADMIN</Link>
-        </li>
-        <li>
-          <Link to="/leads">LEADS</Link>
-        </li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/leads">Leads</Link></li>
+        {isAdmin && <li><Link to="/admin">Admin</Link></li>}
+        <li><button className='logout' onClick={onLogout}>Logout</button></li>
       </ul>
     </nav>
   );

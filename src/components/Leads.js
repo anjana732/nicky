@@ -1,7 +1,5 @@
-// src/components/Leads.js
-
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 
 const Leads = ({ leads }) => {
   const navigate = useNavigate();
@@ -14,7 +12,7 @@ const Leads = ({ leads }) => {
     <div>
       <div className="button-container">
         <Link to="/create-lead">
-          <button className="create-lead">Create Lead</button>
+          <button className='create-lead'>Create Lead</button>
         </Link>
         <button className="create-lead" onClick={handleNavigate}>
           Lead Source
@@ -33,7 +31,9 @@ const Leads = ({ leads }) => {
         <tbody>
           {leads.map((lead) => (
             <tr key={lead.userId}>
-              <td>{lead.userId}</td>
+              <td>
+                <Link to={`/lead/${lead.userId}`}>{lead.userId}</Link>
+              </td>
               <td>{lead.firstName}</td>
               <td>{lead.lastName}</td>
               <td>{lead.email}</td>

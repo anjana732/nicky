@@ -21,6 +21,9 @@ body {
   padding: 20px;
   background: linear-gradient(135deg, #de8de6, #aec5d4);
 }
+.signin-container{
+  margin-top: -10px;
+}
 
 /*.container {
   display: flex;
@@ -33,7 +36,7 @@ body {
   padding: 20px;
   background: linear-gradient(135deg, #63d3ff, #aec5d4); /* Linear gradient background */
  /* box-sizing: border-box; /* Ensure padding and border are included in width and height calculations */
-/*}*/
+
 
 /* Navbar styles */
 nav {
@@ -157,7 +160,7 @@ table th, table td {
 }
 
 table th {
-  background-color: #333;
+  background-color: rgb(54, 55, 56);
   color: white;
 }
 
@@ -167,8 +170,7 @@ table tr:hover {
 .create-lead{
   padding: 15px;
   float: right;
-  background-color: rgb(56, 55, 55);
-  border: 1px soild rgb(56, 55,55);
+  background-color: rgb(40, 150, 240);
   border-radius: 10px;
   color: #ccc;
   margin-top: 50px;
@@ -177,6 +179,9 @@ table tr:hover {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  outline: none;
+  border: none;
+  font-weight: 600;
 }
 .create-lead:focus {
   outline: none;
@@ -203,7 +208,7 @@ table tr:hover {
   opacity: 0.3;
 }
 
-/*Card Style*/
+
 .card {
   background-color: white;
   border-radius: 8px;
@@ -242,8 +247,6 @@ table tr:hover {
   margin-top: 80px;
 }
 
-/*chart style*/
-
 
 .lead-source-container {
   max-width: 100%;
@@ -258,4 +261,87 @@ table tr:hover {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.create-lead-from{
+  margin-top: 50px;
+  max-width: 60vh;
+}
+select{
+  padding: 9px;
+  margin-left: 10px;
+  border-radius: 7px;
+  width: 70%;
+}
+.add-user{
+  padding: 15px;
+  float: right;
+  background-color: rgb(40, 150, 240);
+  border-radius: 10px;
+  color: #ccc;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+.role-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.role-label {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px;
+
+}
+.admin{
+  margin-top: 8px;
+  margin-left: 3px;
+}
+.radio-input {
+  margin-right: 5px;
+}
+
+.radio-label {
+  font-size: 16px;
+}
+.create-user{
+  margin-top: 50px;
+}
+.logout{
+  margin-top: 11px;
+  padding:  3px 7px; 
+  background-color: #29a08c;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+  font-weight: 600;
+}
+.lms {
+  font-size: 45px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: -65px;
 }
